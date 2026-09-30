@@ -1,0 +1,23 @@
+# Runtime parameters — passed as Graph(config=...) and read by nodes.
+# This is a SEPARATE file from config/agent.yaml (the static manifest).
+
+max_retry: 3
+timeout_s: 30
+
+disclosure_template_version: "2026-05-01"
+
+platform_config:
+  tiktok_shop_jp:
+    aspect_ratio: "9:16"
+    max_duration_sec: 60
+  instagram_reels_jp:
+    aspect_ratio: "9:16"
+    max_duration_sec: 90
+  youtube_shorts_jp:
+    aspect_ratio: "9:16"
+    max_duration_sec: 60
+
+prohibited_expressions:
+  - "絶対に痩せる"
+  - "No.1"
+  - "完全無料"
